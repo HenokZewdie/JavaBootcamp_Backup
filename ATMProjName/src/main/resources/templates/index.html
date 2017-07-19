@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns = "http://www.thymeleaf.org">
+<head>
+
+    <title>Home Page</title>
+</head>
+<body>
+<br>
+<br>
+<h4>SpringBoot Bank</h4>
+
+<form action="@{/}" th:action="@{/home}" th:object="${home}" method="post">
+    <p>Account Number: <input type="text" th:field="*{id}" /></p>
+
+    <p><input type="submit" value="Login" />
+        <input type="reset" value="Reset" /></p>
+</form>
+</body>
+</html>
